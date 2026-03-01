@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{0C2627CE-977D-41B1-9CC4-4DE6B2E2E389}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{9A507956-BCBA-4FEB-BE91-13A16AD387F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodApp.Application", "BloodApp.Application\BloodApp.Application.csproj", "{0C233A7B-0C52-4851-9963-118FE5B2BB5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodApp.Domain", "BloodApp.Domain\BloodApp.Domain.csproj", "{26F7070F-9E37-4E32-BE10-BE81146E0099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodApp.Infrastructure", "BloodApp.Infrastructure\BloodApp.Infrastructure.csproj", "{B7B397FE-803B-4167-A558-1C28F94BB565}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodApp.persistece", "BloodApp.persistece\BloodApp.persistece.csproj", "{E0A1198F-DD43-40F9-927A-8522AC63B7E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodApp.API", "BloodApp.API\BloodApp.API.csproj", "{CCF8C41A-2AEC-47AE-B97F-3A923951B143}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C233A7B-0C52-4851-9963-118FE5B2BB5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C233A7B-0C52-4851-9963-118FE5B2BB5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C233A7B-0C52-4851-9963-118FE5B2BB5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C233A7B-0C52-4851-9963-118FE5B2BB5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26F7070F-9E37-4E32-BE10-BE81146E0099}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26F7070F-9E37-4E32-BE10-BE81146E0099}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26F7070F-9E37-4E32-BE10-BE81146E0099}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26F7070F-9E37-4E32-BE10-BE81146E0099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B397FE-803B-4167-A558-1C28F94BB565}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B397FE-803B-4167-A558-1C28F94BB565}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B397FE-803B-4167-A558-1C28F94BB565}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B397FE-803B-4167-A558-1C28F94BB565}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A1198F-DD43-40F9-927A-8522AC63B7E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A1198F-DD43-40F9-927A-8522AC63B7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A1198F-DD43-40F9-927A-8522AC63B7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A1198F-DD43-40F9-927A-8522AC63B7E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCF8C41A-2AEC-47AE-B97F-3A923951B143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF8C41A-2AEC-47AE-B97F-3A923951B143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF8C41A-2AEC-47AE-B97F-3A923951B143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF8C41A-2AEC-47AE-B97F-3A923951B143}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0C233A7B-0C52-4851-9963-118FE5B2BB5B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{26F7070F-9E37-4E32-BE10-BE81146E0099} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{B7B397FE-803B-4167-A558-1C28F94BB565} = {0C2627CE-977D-41B1-9CC4-4DE6B2E2E389}
+		{E0A1198F-DD43-40F9-927A-8522AC63B7E0} = {0C2627CE-977D-41B1-9CC4-4DE6B2E2E389}
+		{CCF8C41A-2AEC-47AE-B97F-3A923951B143} = {9A507956-BCBA-4FEB-BE91-13A16AD387F2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {881B30DD-5D33-421F-86E8-4FE51B6D6F43}
+	EndGlobalSection
+EndGlobal
