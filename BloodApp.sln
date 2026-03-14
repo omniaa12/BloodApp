@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -18,6 +18,28 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodApp.persistece", "BloodApp.persistece\BloodApp.persistece.csproj", "{E0A1198F-DD43-40F9-927A-8522AC63B7E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BloodApp.API", "BloodApp.API\BloodApp.API.csproj", "{CCF8C41A-2AEC-47AE-B97F-3A923951B143}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{225A70E2-715D-4C46-8B99-BDFA79F32909}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{9033D0B4-F372-4370-B74A-F41BAB0DBAD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helper", "Helper", "{BBE24A10-F412-44C9-9928-5A94C6D0BDE9}"
+	ProjectSection(SolutionItems) = preProject
+		Validator.cs = Validator.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middlewares", "Middlewares", "{F3FE3E8A-37C3-4AF9-B533-C01DADCEB1AD}"
+	ProjectSection(SolutionItems) = preProject
+		GlobalErrorHandlerMiddleware.cs = GlobalErrorHandlerMiddleware.cs
+		TansactionMiddlware.cs = TansactionMiddlware.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ViewModels", "ViewModels", "{C8A97C7C-6365-4E59-91F3-8C82180866DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,6 +77,11 @@ Global
 		{B7B397FE-803B-4167-A558-1C28F94BB565} = {0C2627CE-977D-41B1-9CC4-4DE6B2E2E389}
 		{E0A1198F-DD43-40F9-927A-8522AC63B7E0} = {0C2627CE-977D-41B1-9CC4-4DE6B2E2E389}
 		{CCF8C41A-2AEC-47AE-B97F-3A923951B143} = {9A507956-BCBA-4FEB-BE91-13A16AD387F2}
+		{225A70E2-715D-4C46-8B99-BDFA79F32909} = {9A507956-BCBA-4FEB-BE91-13A16AD387F2}
+		{9033D0B4-F372-4370-B74A-F41BAB0DBAD9} = {9A507956-BCBA-4FEB-BE91-13A16AD387F2}
+		{BBE24A10-F412-44C9-9928-5A94C6D0BDE9} = {9A507956-BCBA-4FEB-BE91-13A16AD387F2}
+		{F3FE3E8A-37C3-4AF9-B533-C01DADCEB1AD} = {9A507956-BCBA-4FEB-BE91-13A16AD387F2}
+		{C8A97C7C-6365-4E59-91F3-8C82180866DB} = {9A507956-BCBA-4FEB-BE91-13A16AD387F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {881B30DD-5D33-421F-86E8-4FE51B6D6F43}
