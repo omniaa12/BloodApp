@@ -1,4 +1,6 @@
-
+using Microsoft.EntityFrameworkCore;
+using BloodApp.Infrastructure.DataBase;
+using BloodApp.Domain.Models;
 namespace BloodApp.API
 {
     public class Program
@@ -6,6 +8,12 @@ namespace BloodApp.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            var connectionString = builder.Configuration.GetConnectionString("ConString");
+
+            
+            builder.Services.AddDbContext<Context>(options =>
+                options.UseSqlServer(connectionString));
 
             // Add services to the container.
 

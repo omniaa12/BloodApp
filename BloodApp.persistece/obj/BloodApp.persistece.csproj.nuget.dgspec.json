@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\backend\\BloodApp\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj": {}
+    "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj": {}
   },
   "projects": {
-    "D:\\backend\\BloodApp\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj": {
+    "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\backend\\BloodApp\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj",
+        "projectUniqueName": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj",
         "projectName": "BloodApp.persistece",
-        "projectPath": "D:\\backend\\BloodApp\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj",
-        "packagesPath": "C:\\Users\\Elnour Tech\\.nuget\\packages\\",
-        "outputPath": "D:\\backend\\BloodApp\\BloodApp\\BloodApp.persistece\\obj\\",
+        "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj",
+        "packagesPath": "C:\\Users\\Hossam\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Elnour Tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hossam\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -66,7 +66,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
