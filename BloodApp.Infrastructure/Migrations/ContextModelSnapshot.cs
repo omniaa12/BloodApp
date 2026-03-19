@@ -30,8 +30,9 @@ namespace BloodApp.Infrastructure.Migrations
                     b.Property<int>("BankId")
                         .HasColumnType("int");
 
-                    b.Property<int>("BloodGroup")
-                        .HasColumnType("int");
+                    b.Property<string>("BloodGroup")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CollectionDate")
                         .HasColumnType("datetime2");
@@ -49,8 +50,9 @@ namespace BloodApp.Infrastructure.Migrations
                     b.Property<int?>("PatientVisitId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("BagSerial");
 
@@ -73,7 +75,7 @@ namespace BloodApp.Infrastructure.Migrations
 
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Location")
                         .IsRequired()
@@ -81,7 +83,8 @@ namespace BloodApp.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Password")
                         .IsRequired()
@@ -89,9 +92,16 @@ namespace BloodApp.Infrastructure.Migrations
 
                     b.Property<string>("Phone")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("Phone")
+                        .IsUnique();
 
                     b.ToTable("BloodBanks");
                 });
@@ -134,11 +144,14 @@ namespace BloodApp.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("BankId")
+                        .HasColumnType("int");
+
                     b.Property<DateOnly>("BirthDate")
                         .HasColumnType("date");
 
-                    b.Property<int?>("BloodGroup")
-                        .HasColumnType("int");
+                    b.Property<string>("BloodGroup")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -146,7 +159,8 @@ namespace BloodApp.Infrastructure.Migrations
 
                     b.Property<string>("FullName")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Gender")
                         .IsRequired()
@@ -164,13 +178,22 @@ namespace BloodApp.Infrastructure.Migrations
 
                     b.Property<string>("NationalId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Phone")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("BankId");
+
+                    b.HasIndex("NationalId")
+                        .IsUnique();
+
+                    b.HasIndex("Phone")
+                        .IsUnique();
 
                     b.ToTable("Donors");
                 });
@@ -189,19 +212,21 @@ namespace BloodApp.Infrastructure.Migrations
                     b.Property<int>("BankId")
                         .HasColumnType("int");
 
-                    b.Property<int>("BloodGroup")
-                        .HasColumnType("int");
+                    b.Property<string>("BloodGroup")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ComponentType")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("CurrentCount")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BankId");
+                    b.HasIndex("BankId", "BloodGroup", "ComponentType")
+                        .IsUnique();
 
                     b.ToTable("InventorySummaries");
                 });
@@ -221,8 +246,9 @@ namespace BloodApp.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("PatientBloodType")
-                        .HasColumnType("int");
+                    b.Property<string>("PatientBloodType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PatientName")
                         .IsRequired()
@@ -230,7 +256,8 @@ namespace BloodApp.Infrastructure.Migrations
 
                     b.Property<string>("PatientPhone")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(11)
+                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("RecipientName")
                         .IsRequired()
@@ -241,15 +268,17 @@ namespace BloodApp.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BankId");
+
                     b.ToTable("PatientVisits");
                 });
 
             modelBuilder.Entity("BloodApp.Domain.Models.BloodBag", b =>
                 {
                     b.HasOne("BloodApp.Domain.Models.BloodBank", "Bank")
-                        .WithMany("Inventory")
+                        .WithMany("BloodBags")
                         .HasForeignKey("BankId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BloodApp.Domain.Models.Donor", "Donor")
@@ -258,27 +287,30 @@ namespace BloodApp.Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.HasOne("BloodApp.Domain.Models.PatientVisit", null)
+                    b.HasOne("BloodApp.Domain.Models.PatientVisit", "PatientVisit")
                         .WithMany("ConsumedBags")
-                        .HasForeignKey("PatientVisitId");
+                        .HasForeignKey("PatientVisitId")
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Bank");
 
                     b.Navigation("Donor");
+
+                    b.Navigation("PatientVisit");
                 });
 
             modelBuilder.Entity("BloodApp.Domain.Models.DonationRequest", b =>
                 {
                     b.HasOne("BloodApp.Domain.Models.BloodBank", "Bank")
-                        .WithMany()
+                        .WithMany("DonationRequests")
                         .HasForeignKey("BankId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("BloodApp.Domain.Models.Donor", "Donor")
-                        .WithMany()
+                        .WithMany("DonationRequests")
                         .HasForeignKey("DonorId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Bank");
@@ -286,10 +318,21 @@ namespace BloodApp.Infrastructure.Migrations
                     b.Navigation("Donor");
                 });
 
+            modelBuilder.Entity("BloodApp.Domain.Models.Donor", b =>
+                {
+                    b.HasOne("BloodApp.Domain.Models.BloodBank", "Bank")
+                        .WithMany("Donors")
+                        .HasForeignKey("BankId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Bank");
+                });
+
             modelBuilder.Entity("BloodApp.Domain.Models.InventorySummary", b =>
                 {
                     b.HasOne("BloodApp.Domain.Models.BloodBank", "Bank")
-                        .WithMany()
+                        .WithMany("InventorySummaries")
                         .HasForeignKey("BankId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -297,14 +340,35 @@ namespace BloodApp.Infrastructure.Migrations
                     b.Navigation("Bank");
                 });
 
+            modelBuilder.Entity("BloodApp.Domain.Models.PatientVisit", b =>
+                {
+                    b.HasOne("BloodApp.Domain.Models.BloodBank", "BloodBank")
+                        .WithMany("PatientVisits")
+                        .HasForeignKey("BankId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("BloodBank");
+                });
+
             modelBuilder.Entity("BloodApp.Domain.Models.BloodBank", b =>
                 {
-                    b.Navigation("Inventory");
+                    b.Navigation("BloodBags");
+
+                    b.Navigation("DonationRequests");
+
+                    b.Navigation("Donors");
+
+                    b.Navigation("InventorySummaries");
+
+                    b.Navigation("PatientVisits");
                 });
 
             modelBuilder.Entity("BloodApp.Domain.Models.Donor", b =>
                 {
                     b.Navigation("BloodBags");
+
+                    b.Navigation("DonationRequests");
                 });
 
             modelBuilder.Entity("BloodApp.Domain.Models.PatientVisit", b =>

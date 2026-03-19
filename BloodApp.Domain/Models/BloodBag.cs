@@ -1,27 +1,30 @@
 ﻿using BloodApp.Application.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using BloodApp.Domain.Enums;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BloodApp.Domain.Models
+namespace BloodApp.Domain.Models;
+
+public class BloodBag
 {
-    public class BloodBag
-    {
-        public string BagSerial { get; set; } = "";
-        public int DonorId { get; set; }
-        public int BankId { get; set; }
-        public BloodType BloodGroup { get; set; }
-        public string ComponentType { get; set; } = ""; // Plasma / RBCs / Whole
-        public DateTime CollectionDate { get; set; }
-        public DateTime ExpiryDate { get; set; }
-        public BagStatus Status { get; set; } = BagStatus.Available;
+    [Key]
+    public string BagSerial { get; set; } = string.Empty;
 
-        public int? PatientVisitId { get; set; } // هيبقي نل لو محدش خده لسة
+    public int DonorId { get; set; }
+    [ForeignKey("DonorId")]
+    public virtual Donor Donor { get; set; } = null!;
 
+    public int BankId { get; set; }
+    [ForeignKey("BankId")]
+    public virtual BloodBank Bank { get; set; } = null!;
 
-        public Donor Donor { get; set; } = null!;
-        public BloodBank Bank { get; set; } = null!;
-    }
+    public BloodType BloodGroup { get; set; }
+    public string ComponentType { get; set; } = string.Empty;
+    public DateTime CollectionDate { get; set; }
+    public DateTime ExpiryDate { get; set; }
+    public BagStatus Status { get; set; } = BagStatus.Available;
+
+    public int? PatientVisitId { get; set; }
+    [ForeignKey("PatientVisitId")]
+    public virtual PatientVisit? PatientVisit { get; set; }
 }

@@ -1,23 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BloodApp.Domain.Models
+namespace BloodApp.Domain.Models;
+
+public class DonationRequest
 {
-    public class DonationRequest
-    {
-        public int Id { get; set; }
-        public int DonorId { get; set; }
-        public int BankId { get; set; }
-        public DateTime RequestDate { get; set; } = DateTime.Now;
-        public string Status { get; set; } = "Pending"; // Pending|Approved|Cancelled|Completed
+    public int Id { get; set; }
 
+    public int DonorId { get; set; }
+    [ForeignKey("DonorId")]
+    public virtual Donor Donor { get; set; } = null!;
 
+    public int BankId { get; set; }
+    [ForeignKey("BankId")]
+    public virtual BloodBank Bank { get; set; } = null!;
 
-        
-        public virtual Donor Donor { get; set; } = null!;
-        public virtual BloodBank Bank { get; set; } = null!;
-    }
+    public DateTime RequestDate { get; set; } = DateTime.Now;
+    public string Status { get; set; } = "Pending";
 }
