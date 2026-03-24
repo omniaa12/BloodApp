@@ -196,7 +196,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj": {
+                "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

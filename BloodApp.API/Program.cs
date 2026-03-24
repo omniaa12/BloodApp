@@ -1,6 +1,8 @@
-using Microsoft.EntityFrameworkCore;
-using BloodApp.Infrastructure.DataBase;
+using BloodApp.Domain.IRepositories;
 using BloodApp.Domain.Models;
+using BloodApp.Infrastructure.DataBase;
+using BloodApp.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
 namespace BloodApp.API
 {
     public class Program
@@ -21,6 +23,9 @@ namespace BloodApp.API
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddScoped<IBloodBankRepository, BloodBankRepository>();
+            
 
             var app = builder.Build();
 

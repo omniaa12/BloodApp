@@ -1492,9 +1492,22 @@
           }
         }
       },
+      "BloodApp.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/BloodApp.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BloodApp.Application.dll": {}
+        }
+      },
       "BloodApp.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "BloodApp.Application": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/BloodApp.Domain.dll": {}
         },
@@ -4003,6 +4016,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "BloodApp.Application/1.0.0": {
+      "type": "project",
+      "path": "../BloodApp.Application/BloodApp.Application.csproj",
+      "msbuildProject": "../BloodApp.Application/BloodApp.Application.csproj"
     },
     "BloodApp.Domain/1.0.0": {
       "type": "project",

@@ -15,9 +15,9 @@ public class Donor
     [Required, StringLength(100, MinimumLength = 3, ErrorMessage = "الاسم غير صالح")]
     public string FullName { get; set; } = string.Empty;
 
-    public Egender Gender { get; set; }
+    public String Gender { get; set; } = string.Empty;
     public DateOnly BirthDate { get; set; }
-    public BloodType? BloodGroup { get; set; }
+    public String? BloodGroup { get; set; }
 
     [Required, Phone, StringLength(11, MinimumLength = 11)]
     public string Phone { get; set; } = string.Empty;
@@ -29,7 +29,7 @@ public class Donor
     public bool IsHealthy { get; set; } = true;
     public DateTime? LastDonationDate { get; set; }
 
-    public int BankId { get; set; }
+    public int? BankId { get; set; }
     [ForeignKey("BankId")]
     public virtual BloodBank Bank { get; set; } = null!;
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BloodApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d468da718396aa4b1987e3171e26274c57b3c6c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5fd8366ae3d1f0d5e6d28bf5eae0cc05f1e2f94")]
 [assembly: System.Reflection.AssemblyProductAttribute("BloodApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BloodApp.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

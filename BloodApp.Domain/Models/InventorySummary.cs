@@ -12,7 +12,7 @@ public class InventorySummary
     [ForeignKey("BankId")]
     public virtual BloodBank Bank { get; set; } = null!;
 
-    public BloodType BloodGroup { get; set; }
+    public String BloodGroup { get; set; }= string.Empty;
     public string ComponentType { get; set; } = string.Empty;
     public int CurrentCount { get; set; }
     public int AlertThreshold { get; set; } = 5;

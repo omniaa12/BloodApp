@@ -16,6 +16,7 @@ namespace BloodApp.Application.Enums
         ABNegative,
         OPositive,
         ONegative,
-        Unknown
+        Unknown,
+        
     }
 }
