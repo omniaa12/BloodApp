@@ -1,10 +1,11 @@
 ﻿using BloodApp.Application.DTOs;
+using BloodApp.Application.IServices;
 using BloodApp.Domain.IRepositories;
 using BloodApp.Domain.Models;
 
 namespace BloodApp.Application.Services
 {
-    public class DonorService
+    public class DonorService : IDonorService
     {
         private readonly IDonorRepository _donorRepository;
 
