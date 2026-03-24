@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.API\\BloodApp.API.csproj": {}
+    "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.API\\BloodApp.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.API\\BloodApp.API.csproj": {
+    "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.API\\BloodApp.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.API\\BloodApp.API.csproj",
+        "projectUniqueName": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.API\\BloodApp.API.csproj",
         "projectName": "BloodApp.API",
-        "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.API\\BloodApp.API.csproj",
-        "packagesPath": "C:\\Users\\Hossam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.API\\obj\\",
+        "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.API\\BloodApp.API.csproj",
+        "packagesPath": "C:\\Users\\compu_tech\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hossam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\compu_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,24 +26,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj": {
-                "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj"
+              "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj": {
+                "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj"
               },
-              "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj"
+              "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj"
               },
-              "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Infrastructure\\BloodApp.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Infrastructure\\BloodApp.Infrastructure.csproj"
+              "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Infrastructure\\BloodApp.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Infrastructure\\BloodApp.Infrastructure.csproj"
               },
-              "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj": {
-                "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj"
+              "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj": {
+                "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj"
               }
             }
           }
@@ -58,7 +57,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -98,24 +97,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj": {
+    "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj",
+        "projectUniqueName": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj",
         "projectName": "BloodApp.Application",
-        "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj",
-        "packagesPath": "C:\\Users\\Hossam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Application\\obj\\",
+        "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Application\\BloodApp.Application.csproj",
+        "packagesPath": "C:\\Users\\compu_tech\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hossam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\compu_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -124,147 +123,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.100"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj",
-        "projectName": "BloodApp.Domain",
-        "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj",
-        "packagesPath": "C:\\Users\\Hossam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Domain\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Hossam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "10.0.100"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Infrastructure\\BloodApp.Infrastructure.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Infrastructure\\BloodApp.Infrastructure.csproj",
-        "projectName": "BloodApp.Infrastructure",
-        "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Infrastructure\\BloodApp.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Hossam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Infrastructure\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\Hossam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj": {
-                "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj"
+              "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj"
               }
             }
           }
@@ -279,7 +145,141 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj",
+        "projectName": "BloodApp.Domain",
+        "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\compu_tech\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\compu_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Infrastructure\\BloodApp.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Infrastructure\\BloodApp.Infrastructure.csproj",
+        "projectName": "BloodApp.Infrastructure",
+        "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Infrastructure\\BloodApp.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\compu_tech\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\compu_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj": {
+                "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.Domain\\BloodApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -316,24 +316,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj": {
+    "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj",
+        "projectUniqueName": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj",
         "projectName": "BloodApp.persistece",
-        "projectPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj",
-        "packagesPath": "C:\\Users\\Hossam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hossam\\Source\\Repos\\BloodApp\\BloodApp.persistece\\obj\\",
+        "projectPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.persistece\\BloodApp.persistece.csproj",
+        "packagesPath": "C:\\Users\\compu_tech\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\compu_tech\\source\\repos\\BloodApp\\BloodApp.persistece\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Hossam\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\compu_tech\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -342,7 +342,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -361,7 +360,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -382,7 +381,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

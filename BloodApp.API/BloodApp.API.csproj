@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BloodApp.Application\BloodApp.Application.csproj" />
     <ProjectReference Include="..\BloodApp.Domain\BloodApp.Domain.csproj" />
     <ProjectReference Include="..\BloodApp.Infrastructure\BloodApp.Infrastructure.csproj" />
