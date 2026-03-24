@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BloodApp.persistece")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6cedc3d986860e3d9ca64824d7b27c54c5b40077")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5fd8366ae3d1f0d5e6d28bf5eae0cc05f1e2f94")]
 [assembly: System.Reflection.AssemblyProductAttribute("BloodApp.persistece")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BloodApp.persistece")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
